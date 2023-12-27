@@ -51,7 +51,7 @@ h1,
 h2,
 h3 {
   color: var(--clr-neutral-700);
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 /* Utility Classes */
@@ -70,6 +70,19 @@ h3 {
 header {
   text-align: center;
   margin-block: 5rem;
+}
+
+header h1 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-light);
+}
+
+header h1 span {
+  font-weight: var(--fw-bold);
+}
+
+header > p {
+  font-size: var(--fs-500);
 }
 
 /* Layout Classes */
