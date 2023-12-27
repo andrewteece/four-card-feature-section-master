@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-/* Css Custom Properties */
+/* CSS Custom Properties */
 
 :root {
   --ff-primary: 'Poppins', sans-serif;
@@ -23,4 +23,76 @@
   --clr-cyan: hsl(180, 62%, 55%);
   --clr-orange: hsl(34, 97%, 64%);
   --clr-blue: hsl(212, 86%, 64%);
+}
+
+/* CSS Reset */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+
+html {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  line-height: 1.7;
+  color: var(--clr-netural-400);
+}
+
+body {
+  margin: 0;
+  padding-block-end: 5rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-neutral-700);
+  line-height: 1.1;
+}
+
+/* Utility Classes */
+
+.wrapper {
+  max-width: 68.75rem;
+  margin-inline: auto;
+}
+
+.wrapper--narrow {
+  max-width: 34.375rem;
+}
+
+/* Header Section */
+
+header {
+  text-align: center;
+  margin-block: 5rem;
+}
+
+/* Layout Classes */
+
+.layout-flex {
+  --gap: 2rem;
+  display: flex;
+  gap: var(--gap);
+}
+
+.layout-flex > * {
+  flex: 1;
+}
+
+.col {
+  display: grid;
+  align-content: center;
+  gap: var(--gap);
+}
+
+/* Card Styles */
+
+.card {
+  background-color: #d5d1d1;
+  padding: 2rem;
 }
